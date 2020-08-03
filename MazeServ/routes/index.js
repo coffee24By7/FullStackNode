@@ -3,7 +3,7 @@ const router = express.Router();
 
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
-
+const mazeController = require('../controllers/mazeController');
 const { catchErrors } = require('../handlers/errorHandlers');
 const bodyParser = require('body-parser');
 
@@ -21,8 +21,13 @@ const bodyParser = require('body-parser');
 //   catchErrors(mazeController.createMaze)
 // );
 
-router.get('/', catchErrors(userController.main));
-router.post('/', catchErrors(userController.main));
+
+router.get('/', catchErrors(mazeController.main));
+router.post('/', catchErrors(mazeController.main));
+
+
+router.get('/user', catchErrors(userController.main));
+router.post('/user', catchErrors(userController.main));
 
 // router.get('/maze/:id/edit', catchErrors(mazeController.editmaze));
 // router.get('/maze/:slug', catchErrors(mazeController.getmazeBySlug));

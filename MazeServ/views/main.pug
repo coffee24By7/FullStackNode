@@ -6,10 +6,4 @@ block content
   .inner
     h2= title
     +mazeForm(maze)    
-    form.form(action="/register" method="GET")
-      h2 If you are a new user please register to save your mazes and create new ones.
-      input.button(type="submit" value="Register →")
 
-    form.form(action="/login" method="GET")
-      h2 Existing users who have saved mazes, please login now.
-      input.button(type="submit" value="Login →")
