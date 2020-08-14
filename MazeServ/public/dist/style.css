@@ -706,7 +706,7 @@ label {
     background: #303030;
     color: white; }
 
-.mazes {
+.maze {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;

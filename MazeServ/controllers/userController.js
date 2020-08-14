@@ -1,13 +1,14 @@
 const mongoose = require('mongoose');
 const User = require('./../models/user.js');
-// const User = mongoose.model('User'); // same as line above but a different way to get it
+require('../models/Maze');
 const promisify = require('es6-promisify');
-
-'use strict';
+const Maze = mongoose.model('Maze');
+const mazeWorker = require('./../public/scripts/maze_worker');
 
 // no login just show main page
 exports.main = async (req, res) => {
-   res.render('mainUser', { title: 'Welcome to A maze' });   
+  console.log("In the main logic of user because root URL /user was found");
+  res.render('mainUser', { title: 'Welcome to A maze'});
 };
 
 // ask for login
@@ -78,3 +79,5 @@ exports.updateAccount = async (req, res) => {
   req.flash('success', 'Updated the profile!');
   res.redirect('back');
 };
+
+
