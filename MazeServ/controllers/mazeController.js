@@ -12,7 +12,8 @@ exports.main = async (req, res) => {
   // if the user is here and they have entered height and width
   // we need to get a maze for the main form 
   // this may be only an example for someone who is going to login
-  if (req.body.height !== null && req.body.width  !== null && req.body.height !== undefined && req.body.width  !== undefined)
+  if (req.body.height !== null && req.body.width  !== null && 
+    req.body.height !== undefined && req.body.width  !== undefined)
   {
     //console.log(req.body);
     //console.log("Found request for maze that is " + req.body.height + " by " + req.body.width + " in size!");
@@ -23,7 +24,7 @@ exports.main = async (req, res) => {
 
       mazeWorker.getMaze(maze.height, maze.width).then((result) => {
           maze.drawing = result;
-          res.render('main', { title: 'Welcome to A maze',  maze });
+          res.render('main', { title: 'Welcome to A mazing',  maze });
       }).catch((error) => {
           console.log("Error", error);
           response.end("Error: " + error);
