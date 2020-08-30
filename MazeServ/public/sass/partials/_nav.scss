@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   justify-content: space-between;
-  background: $black;
+  background: $white;
   &__section {
     display: flex;
     &--search {
@@ -15,9 +15,9 @@
     display: flex;
   }
   &__link {
-    background: $black;
-    color: white;
-    border-right: 1px solid rgba(255,255,255,0.1);
+    background: $white;
+    color: black;
+    border-right: 2px solid rgb(252, 3, 3);
     text-transform: uppercase;
     padding: 1.2rem 2rem 1rem 2rem;
     display: block;
@@ -34,8 +34,8 @@
       margin-bottom: 1rem;
     }
     &:hover, &--active {
-      border-bottom-color: rgba(0,0,0,0.2);
-      border-right-color: rgba(0,0,0,0.05);
+      border-bottom-color: rgb(253, 2, 2);
+      border-right-color: rgb(253, 2, 2);
       svg {
         transform: scale(1.2)
       }
@@ -80,7 +80,7 @@
     &__section {
       order: 1;
       &--search {
-        border-top: 1px solid rgba(255,255,255,0.1);
+        border-top: 1px solid rgb(253, 3, 3);
         order: 2;
         width: 100%;
       }
@@ -94,7 +94,7 @@
       width: 100%;
       &--user {
         order: -1;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgb(250, 3, 3);
         .avatar {
           min-width: 20px;
           height: 20px;

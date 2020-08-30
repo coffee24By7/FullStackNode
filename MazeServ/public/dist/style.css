@@ -8,7 +8,7 @@ body {
   body:before {
     content: '';
     display: block;
-    background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+    background: linear-gradient(90deg, #4878de 0%, #2630bf 20%, #e82cbf 60%, #ff0eaf 85%, #de4848 95%);
     height: 10px;
     width: 100%; }
 
@@ -594,7 +594,7 @@ label {
   .flash p {
     margin: 0; }
 
-.nav {
+.nav { 
   display: -ms-flexbox;
   display: flex;
   list-style: none;
@@ -602,7 +602,7 @@ label {
   padding: 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: #303030; }
+  background: #3050e0; }
   .nav__section {
     display: -ms-flexbox;
     display: flex; }
@@ -613,9 +613,9 @@ label {
     display: -ms-flexbox;
     display: flex; }
   .nav__link {
-    background: #303030;
-    color: white;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    background: ##3050e0;
+    color: rgb(7, 7, 7);
+    border-right: 1px solid rgb(252, 6, 6);
     text-transform: uppercase;
     padding: 1.2rem 2rem 1rem 2rem;
     display: block;
@@ -635,9 +635,9 @@ label {
       fill: white;
       margin-bottom: 1rem; }
     .nav__link:hover, .nav__link--active {
-      border-bottom-color: rgba(0, 0, 0, 0.2);
-      border-right-color: rgba(0, 0, 0, 0.05);
-      background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%) fixed; }
+      border-bottom-color: rgb(247, 243, 8);
+      border-right-color: rgba(247, 243, 8);
+      background: linear-gradient(90deg, #2f02f7 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%) fixed; }
       .nav__link:hover svg, .nav__link--active svg {
         -ms-transform: scale(1.2);
             transform: scale(1.2); }
@@ -1095,8 +1095,8 @@ label {
 
 .button {
   border: 0;
-  background: #FFC40E;
-  color: #303030;
+  background: #0307fd;
+  color: #fdfcfc;
   font-family: 'Panama';
   font-weight: 600; }
 

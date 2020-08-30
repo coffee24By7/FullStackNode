@@ -1,0 +1,12 @@
+extends layout
+
+include mixins/_mazeView
+include mixins/_pagination
+
+block content
+  .inner
+    h2= title
+    .stores
+      each maze in mazes
+        +mazeView(maze)
+    +pagination(page, pages, count)

@@ -1,0 +1,26 @@
+	let express = require('express')
+	let app = express()
+	
+	app.get('/', function(req, res) {
+	    res.send('Hello Sir')
+	})
+
+
+	let express = require('express')
+	let app = express()
+	
+	app.post('/', function(req, res) {
+	    res.send('Hello Sir')
+	})
+
+
+	let express = require('express')
+	let app = express()
+	
+	app.all('/', function(req, res) {
+	    console.log('Hello Sir')
+	    next()   // Pass the control to the next handler
+	})
+
+
+

@@ -28,6 +28,7 @@ router.post('/', catchErrors(mazeController.main));
 router.get('/user', catchErrors(userController.main));
 router.post('/user', catchErrors(userController.main));
 
+router.get('/maze', catchErrors(mazeController.myMazes));
 // router.get('/maze/:id/edit', catchErrors(mazeController.editmaze));
 // router.get('/maze/:slug', catchErrors(mazeController.getmazeBySlug));
 

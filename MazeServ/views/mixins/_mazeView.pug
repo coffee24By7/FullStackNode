@@ -1,0 +1,25 @@
+mixin mazeCard(maze = {})
+  .maze
+    .maze__hero
+      .maze__actions
+        if user
+          .maze__action.maze__action--heart
+            form.heart(method="POST" action=`/api/mazes/${maze._id}/heart`)
+              - const heartStrings = user.hearts.map(obj => obj.toString())
+              - const heartClass = heartStrings.includes(maze._id.toString()) ? 'heart__button--hearted' : ''
+              button.heart__button(type="submit" name="heart" class=heartClass)
+                != h.icon('heart')
+        if user && maze.author.equals(user._id)
+          .maze__action.maze__action--edit
+            a(href=`/mazes/${maze._id}/edit`)
+              != h.icon('pencil')
+        if maze.reviews
+          .maze__action.maze__action--count
+            != h.icon('review')
+            span= maze.reviews.length
+
+      img(src=`/uploads/${maze.photo || 'maze.png'}`)
+      h2.title
+        a(href=`/maze/${maze.slug}`) #{maze.name}
+    .maze__details
+      p= maze.description.split(' ').slice(0, 25).join(' ')
