@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vertical / Horizontal Line Tester</title>
+<style>
+    .vertical-line{
+        display: inline-block;
+        border-left: 3px solid #ccc;
+        margin: 0 50%;
+  		background-color: YELLOW;
+    }
+  
+.verticalLine {
+       width: 1px;
+       height: 20px;
+       background: red);
+}
+
+  .horizontalLine {
+       height: 10px;
+       background: red);
+}
+
+span{  
+  height: 3px; 
+  color: red; 
+  background-color: red; 
+  border: none; 
+  }  
+  
+hr{  
+  height: 1px; 
+  color: red; 
+  background-color: red; 
+  border: none; 
+  }
+  table {
+    font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    }
+  tr {
+    border-collapse: collapse;
+     }
+  
+  td {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 0 0.5em;
+    }
+  
+  td.right {
+    border-right: 2px solid #000000;
+    }
+  
+  td.left {
+    border-left: 2px solid #000000;
+    }
+  
+  td.bottom {
+    border-bottom: 2px solid #000000;
+    }
+  
+  td.top {
+    border-top: 2px solid #000000;
+    }  
+  
+  td.redTop {
+    border-top: 2px solid #ff0000;
+    }
+  
+  td.redRight {
+    border-right: 2px solid #ff0000;
+    }
+    
+  td.redLeft {
+    border-left: 2px solid #ff0000;
+    }
+    
+  td.redBottom {
+    border-bottom: 2px solid #ff0000;
+    }  
+  
+.box{  
+  background-color: red; 
+  position: absolute; 
+  margin: 0; 
+  border: 0; 
+  padding: 0; 
+  width=100%;
+  height
+  }
+  
+</style>
+</head>
+<body>
+
+<table class="table"  cellspacing="0">
+<tbody>
+<!-- -------------------------------------------------------------- -->
+<!-- ROW 1 -->
+<!-- -------------------------------------------------------------- -->
+<tr class="tr">
+<td style="width: 56px;">Row 1</td>
+<td  bgcolor="red" class="top bottom" style="width: 14px;">
+
+</td>
+<td  bgcolor="red" class="top" style="border: 1px solid red; width: 49px;">
+
+</td>
+<td class="left" style="width: 41px;">
+
+</td>
+</tr>
+<!-- -------------------------------------------------------------- -->
+<!-- ROW 2 -->
+<!-- -------------------------------------------------------------- -->
+<tr class="tr">
+<td style="width: 56px;">Row 2</td>
+<td class="bottom top right" style="width: 14px;">
+
+</td>
+<td  class="right left topRed bottomRed" bgcolor="red" style="border: 1px solid red; width: 49px;">
+
+</td>
+<td class="left" style="width: 41px;"></td>
+</tr>
+  
+<!-- -------------------------------------------------------------- -->
+<!-- ROW 3 -->
+<!-- -------------------------------------------------------------- -->
+<tr class="tr">
+<td style="width: 56px;">Row 3</td>
+<td class="bottom top right" style="width: 14px;">
+
+</td>
+<td  bgcolor="red" class="bottom" style="width: 49px;">
+
+</td>
+<td  bgcolor="red" class="bottom top" style="width: 41px;">
+
+</td>
+</tr>
+  
+  </tbody>
+</table>

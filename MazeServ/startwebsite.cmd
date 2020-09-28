@@ -1,1 +1,1 @@
-npm start
+nodemon start.js

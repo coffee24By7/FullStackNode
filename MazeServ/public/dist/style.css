@@ -27,6 +27,52 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+  table {
+    font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    }
+  tr {
+    border-collapse: collapse;
+     }
+  
+  td {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 0 0.5em;
+    }
+  
+  td.right {
+    border-right: 2px solid #000000;
+    }
+  
+  td.left {
+    border-left: 2px solid #000000;
+    }
+  
+  td.bottom {
+    border-bottom: 2px solid #000000;
+    }
+  
+  td.top {
+    border-top: 2px solid #000000;
+    }  
+  
+  td.redTop {
+    border-top: 2px solid #000000;
+    }
+  
+  td.redRight {
+    border-right: 2px solid #000000;
+    }
+    
+  td.redLeft {
+    border-left: 2px solid #000000;
+    }
+    
+  td.redBottom {
+    border-bottom: 2px solid #000000;
+    }
+    
+
 img {
   max-width: 100%; }
 
@@ -594,7 +640,7 @@ label {
   .flash p {
     margin: 0; }
 
-.nav { 
+.nav {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
@@ -602,7 +648,7 @@ label {
   padding: 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: #3050e0; }
+  background: #a0bcf8; }
   .nav__section {
     display: -ms-flexbox;
     display: flex; }
@@ -613,7 +659,7 @@ label {
     display: -ms-flexbox;
     display: flex; }
   .nav__link {
-    background: ##3050e0;
+    background: #a0bcf8;
     color: rgb(7, 7, 7);
     border-right: 1px solid rgb(252, 6, 6);
     text-transform: uppercase;
@@ -632,7 +678,7 @@ label {
     .nav__link svg {
       width: 40px;
       transition: all 0.2s;
-      fill: white;
+      fill: #a0bcf8;
       margin-bottom: 1rem; }
     .nav__link:hover, .nav__link--active {
       border-bottom-color: rgb(247, 243, 8);

@@ -3,7 +3,6 @@ const User = require('./../models/user.js');
 require('../models/Maze');
 const promisify = require('es6-promisify');
 const Maze = mongoose.model('Maze');
-const mazeWorker = require('./../public/scripts/maze_worker');
 
 // no login just show main page
 exports.main = async (req, res) => {

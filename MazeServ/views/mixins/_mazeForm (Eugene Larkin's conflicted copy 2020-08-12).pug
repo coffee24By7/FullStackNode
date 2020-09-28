@@ -1,0 +1,18 @@
+mixin mazeForm(maze = {})
+  form.form(action='/' method="POST")
+    h2 Size
+    label(for="width") Width
+    input(type="text" name="width" value=maze.width, maxlength='6', style="witdh:5px")
+    label(for="height") Height
+    input(type="text" name="height" value=maze.height, maxlength='6', style="witdh:5px" )
+
+    
+    input(type="submit" value="Get a Maze" class="button")
+    - var x = 0
+    - var y = 0
+
+    h2 Maze
+      p !{maze.drawing}
+
+  form.form(action='/saveSave' method="POST")
+    input(type="submit" value="Save To My Mazes" class="button")
